@@ -1,0 +1,8 @@
+---
+layout: layout.html
+---
+<h2>Bram Nijmeijer.</h2>
+
+{% for posts in collections.post %}
+<h3>{{ post.data.title}}</h3>
+{% endfor %}
