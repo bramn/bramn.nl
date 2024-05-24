@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>bramn.nl</title>
-  <!--  <link rel="stylesheet" href="css/style.css">-->
-  <meta name="description" content="">
+  <meta name="description" content="bramn">
 
   <meta property="og:title" content="">
   <meta property="og:type" content="">
@@ -18,20 +18,25 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
+  <link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/05893941-af1d-4c96-a1d0-0e0cb5b76cc2.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/bundle.css">
+
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#ff8700">
 </head>
 
 <body>
 
-<!-- Add your site or application content here -->
-<header>
-  <h1>{{ title | default: "bramn.nl" }}</h1>
-</header>
-
-<main>
+<main class="main">
   {{ content }}
 </main>
 </body>
+
 
 </html>

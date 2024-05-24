@@ -1,8 +1,23 @@
 ---
 layout: layout.html
 ---
-<h2>Bram Nijmeijer.</h2>
 
-{% for posts in collections.post %}
-<h3>{{ post.data.title}}</h3>
-{% endfor %}
+<div class="main">
+  <header>
+    <h1>{{ title | default: "bramn" }}</h1>
+  </header>
+
+  <aside>
+    <blockquote>{ bram•n } - Zelfstandig naamwoord, kort voor Bram Nijmeijer, veel gebruikt als gebruikersnaam.
+    </blockquote>
+  </aside>
+
+  <div>
+    <h3>Latest blogs</h3>
+    <ul>
+    {% for blog in collections.blog %}
+    <li>{{ blog.filePathStem }} {{ blog.data.title}}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
