@@ -2,22 +2,23 @@
 layout: layout.html
 ---
 
-<div class="main">
+<main>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="/watches">Watches 📺</a></li>
+      <li><a href="/wears">Wears 👟</a></li>
+      <li><a href="/uses">Uses 💻</a></li>
+      <li><a href="/follows">Follows 🎙️</a></li>
+      <li><a href="/rides">Rides 🏍️</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>{{ title | default: "bramn" }}</h1>
+    <h1>{ bram•n }</h1>
+    <h2>-Noun, short for Bram Nijmeijer, often used as a username.</h2>
+
+
   </header>
 
-  <aside>
-    <blockquote>{ bram•n } - Zelfstandig naamwoord, kort voor Bram Nijmeijer, veel gebruikt als gebruikersnaam.
-    </blockquote>
-  </aside>
-
-  <div>
-    <h3>Latest blogs</h3>
-    <ul>
-    {% for blog in collections.blog %}
-    <li>{{ blog.filePathStem }} {{ blog.data.title}}</li>
-    {% endfor %}
-    </ul>
-  </div>
-</div>
+</main>

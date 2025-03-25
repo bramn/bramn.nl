@@ -1,52 +1,92 @@
+/* https://coolors.co/f1e8b8-f9e784-e58f65-d05353-191919 */
+
 body {
-  background: #ffe;
+  --font-body: "Cormorant Garamond", serif;
+  --font-headers: "Dosis";
+
+  background: #f1e8b8;
   color: #001;
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 800px 1fr;
   gap: 10px;
   grid-template-areas: "mugshot main";
   height: 100%;
+
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-style: normal;
+  font-size: 18px;
 }
 
 main.main {
+  padding: 32px 0;
   height: 100%;
   grid-area: main;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-h1,h2,h3 {
-  font-family: "Dosis";
+
+nav.navigation > ul {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+}
+
+nav.navigation > ul > li:not(.no_verb) {
+  background-color: #fff;
+  border: 3px solid #E58F65;
+  border-radius: 128px;
+  font-weight: bolder;
+  font-family: var(--font-headers);
+}
+
+nav.navigation > ul > li > a {
+  color: #E58F65;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 4px 16px;
+  text-wrap: nowrap;
+  display: block;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-headers);
   font-optical-sizing: auto;
 }
+
 h1 {
   font-weight: 600;
   font-style: normal;
-  font-size: 96px;
-  margin: 32px 0 16px 0;
+  font-size: 72px;
+  margin: 32px 0 8px 0;
 }
+
 h2 {
-  font-weight: 700;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
   font-style: normal;
-  font-size: 48px;
+  font-size: 28px;
+  margin-left: 24px;
+  line-height: 40px;
 }
+
 h3 {
   font-weight: 600;
   font-style: normal;
   font-size: 28px;
   margin: 14px 0 7px 0;
 }
+
 blockquote {
-  font-family: "Cormorant Garamond", serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 24px;
-  margin-left: 24px;
 }
+
 blockquote:before {
   content: open-quote;
 }
+
 blockquote:after {
   content: close-quote;
 }
